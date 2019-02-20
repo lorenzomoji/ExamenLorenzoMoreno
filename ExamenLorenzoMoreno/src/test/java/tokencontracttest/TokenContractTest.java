@@ -7,6 +7,7 @@ package tokencontracttest;
 
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -41,5 +42,11 @@ public class TokenContractTest {
         TokenContract tokenContract = new TokenContract();
         double num = 150d;
         //assertEquals(150d, balance.contains(num));
+    }
+    
+    @Test 
+    public void totalTokens_test() {
+        TokenContract tokenContract = new TokenContract();
+        Assert.assertEquals(4, tokenContract.totalTokensSold());
     }
 }

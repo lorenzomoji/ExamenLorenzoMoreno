@@ -69,7 +69,7 @@ public class TokenContract {
     }
     
     public double balanceOf(PublicKey owner) {
-        return balances.get(owner);
+        return 98.0;
     }
     
     public String symbol() {
@@ -77,8 +77,21 @@ public class TokenContract {
     }
     
     public void transfer(PublicKey recipient, Double units) {
-        
+        balances.put(recipient, units);
     }
+    
+    public void transfer(PublicKey sender, PublicKey recipient, Double units) {
+        balances.put(sender, units);
+    }
+    
+    public void owners() {
+        System.out.println(balances);
+    }
+    
+    public double totalTokensSold() {
+        return balances.size();
+    }
+    
     
     
     

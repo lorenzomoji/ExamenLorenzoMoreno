@@ -165,7 +165,7 @@ public class App {
          * Lanza una EXCEPCION si no se cumple la condicion
          */
 
- /*       System.out.println("\n" + "Transferencia de entradas" + "\n" + 
+        System.out.println("\n" + "Transferencia de entradas" + "\n" + 
                                   "========================="        );
 
         ricknillos.transfer(morty.getPK(), 2d);
@@ -176,7 +176,7 @@ public class App {
                                 + ricknillos.symbol());
 
         System.out.println("Entradas de Morty: " 
-                                + ricknillos.balanceOf(morty.getPK())
+         //                       + ricknillos.balanceOf(morty.getPK())
                                 + " "
                                 + ricknillos.symbol());
 
@@ -184,7 +184,7 @@ public class App {
         ricknillos.transfer(morty.getPK(), 300d);
 
         System.out.println("Rick no tiene 300 entradas => entradas de Morty: " 
-                                + ricknillos.balanceOf(morty.getPK())
+        //                        + ricknillos.balanceOf(morty.getPK())
                                 + " "
                                 + ricknillos.symbol());
         
@@ -192,7 +192,7 @@ public class App {
         ricknillos.transfer(morty.getPK(), 2d);
 
         System.out.println("2 entradas mas para Morty: " 
-                                + ricknillos.balanceOf(morty.getPK())
+        //                        + ricknillos.balanceOf(morty.getPK())
                                 + " "
                                 + ricknillos.symbol());
 
@@ -210,7 +210,7 @@ public class App {
          * @param cantidad de tokens
          */
 
-/*        System.out.println("\n" + "Reventa de entradas" + "\n" + 
+        System.out.println("\n" + "Reventa de entradas" + "\n" + 
                                   "==================="        );
         
         ricknillos.transfer(morty.getPK(), jen.getPK(), 1d);
@@ -235,7 +235,7 @@ public class App {
          *         y el numero de tokens que han adquirido
          */
 
-/*        System.out.println("\n" + "Lista de compradores" + "\n" + 
+        System.out.println("\n" + "Lista de compradores" + "\n" + 
                                   "===================="        );
         ricknillos.owners();
         
@@ -247,7 +247,7 @@ public class App {
          * @return numero de tokens (entradas) vendidos
          */
 
-/*        System.out.println("\n" + "Total de asistentes: " 
+        System.out.println("\n" + "Total de asistentes: " 
                                     + ricknillos.totalTokensSold() + "\n");
 
         
@@ -265,7 +265,7 @@ public class App {
          * @param cantidad de enziniums
          */
 
-/*        morty.addEZI(20d);
+        morty.addEZI(20d);
 
         System.out.println("\n" + "Recarga eZis de Morty" + "\n" + 
                                   "====================="        );

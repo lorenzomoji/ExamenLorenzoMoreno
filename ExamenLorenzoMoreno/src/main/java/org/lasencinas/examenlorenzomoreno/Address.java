@@ -57,6 +57,10 @@ public class Address {
     public void generateKeyPair() {
         setPK(GenSig.generateKeyPair().getPublic());
     }
+    
+    public void addEZI(Double EZI) {
+        balance = EZI;
+    }
      
     
 }
