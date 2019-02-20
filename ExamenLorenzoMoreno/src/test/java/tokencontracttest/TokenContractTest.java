@@ -11,6 +11,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.lasencinas.examenlorenzomoreno.Address;
+import org.lasencinas.examenlorenzomoreno.TokenContract;
 
 public class TokenContractTest {
 
@@ -32,5 +34,12 @@ public class TokenContractTest {
 
         // verifico la trasnferencia de EZI
         assertEquals(20d, ricknillos.owner().getBalance(), 0d);
+    }
+    
+    @Test
+    public void balanceOf_test() {
+        TokenContract tokenContract = new TokenContract();
+        double num = 150d;
+        //assertEquals(150d, balance.contains(num));
     }
 }
