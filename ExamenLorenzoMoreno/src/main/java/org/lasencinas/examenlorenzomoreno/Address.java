@@ -19,7 +19,7 @@ public class Address {
     
     //Setters & Getters
     
-    public void SetPK(PublicKey PK) {
+    public void setPK(PublicKey PK) {
         this.PK = PK;
     }
     
@@ -27,7 +27,7 @@ public class Address {
         return this.PK;
     }
     
-    public void SetSK(PrivateKey SK) {
+    public void setSK(PrivateKey SK) {
         this.SK = SK;
     }
     
@@ -37,6 +37,10 @@ public class Address {
     
     //MÉTODOS
     
-    
+     public void generateKeyPair() {
+         setPK(GenSig.generateKeyPair().getPublic());
+     }
+     
+     
     
 }

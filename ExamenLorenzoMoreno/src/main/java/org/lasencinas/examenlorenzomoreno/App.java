@@ -43,11 +43,11 @@ public class App {
 
         /**
          * Creamos una Address en nuestro sistema para Morty
-         * y otra para Jen y visualizamos su direccion puvlica
+         * y otra para Jen y visualizamos su direccion publica
          * y balance
          */
         
-/*        Address morty = new Address();
+        Address morty = new Address();
         morty.generateKeyPair();
 
         Address jen = new Address();
@@ -85,7 +85,7 @@ public class App {
          * @return el total de unidades de este token que actualmente existen.
          */
 
-/*       TokenContract ricknillos = new TokenContract(rick);
+/*        TokenContract ricknillos = new TokenContract(rick);
         ricknillos.setName("Ricknillos");
         ricknillos.setSymbol("RNiLL");
         ricknillos.setTotalSupply(100);
